@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Tag: go | qbsu&#39; Blog</title>
+  <title>Tag: Go | qbsu&#39; Blog</title>
   
   
 
@@ -279,8 +279,8 @@
       
         
   <h2 class="title">
-    <a href="/2020/02/18/go%20leetcode/">
-      Go leetcode
+    <a href="/2020/02/26/Go-Module%E7%9A%84%E4%BD%BF%E7%94%A8/">
+      Go Module的使用
     </a>
   </h2>
 
@@ -294,7 +294,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-02-18</p>
+    <p>2020-02-26</p>
   </a>
 </div>
 
@@ -302,14 +302,6 @@
         
           
             
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/%E7%BC%96%E7%A8%8B/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>编程</p>
-    </a>
-  </div>
-
 
           
         
@@ -334,10 +326,10 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p>这里是用GO语言刷leetcode算法题的记录，会不定时更新</p>
+      <p>Golang包管理器的学习</p>
       
         <div class="button readmore">
-          <a href="/2020/02/18/go%20leetcode/" class="flat-box">
+          <a href="/2020/02/26/Go-Module%E7%9A%84%E4%BD%BF%E7%94%A8/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -347,9 +339,7 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/%E7%AE%97%E6%B3%95/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 算法</a>
-        
-          <a href="/tags/go/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> go</a>
+          <a href="/tags/Go/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Go</a>
         
       </div>
     
@@ -660,7 +650,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/go/" style="font-size: 14px; color: #999">go</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">算法</a>
+      <a href="/tags/Go/" style="font-size: 14px; color: #999">Go</a> <a href="/tags/go/" style="font-size: 14px; color: #999">go</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">算法</a>
     </div>
   </section>
 
@@ -992,6 +982,23 @@
       /* 图片采用懒加载处理时,
        * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
        * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
+�本的属性名src替换为对应属性名data-original,
        * 修改如下
        */
        if (LAZY_LOAD_IMAGE) {
