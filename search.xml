@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>docker部署ElasticSearch</title>
+      <link href="/2020/03/21/docker%E9%83%A8%E7%BD%B2ElasticSearch/"/>
+      <url>/2020/03/21/docker%E9%83%A8%E7%BD%B2ElasticSearch/</url>
+      
+        <content type="html"><![CDATA[<p>因为需要存储的数据不大，且基本上只有查找的需求，打算利用ElasticSearch来作为存储容器，因为没有Java环境，同时正好想学习下docker，就简单记录一下吧。</p><p>docker的安装及ElasticSearch的基本部署</p><a id="more"></a><h3 id="一、docker安装"><a href="#一、docker安装" class="headerlink" title="一、docker安装"></a>一、docker安装</h3><h4 id="1、创建一个新的仓库"><a href="#1、创建一个新的仓库" class="headerlink" title="1、创建一个新的仓库"></a>1、创建一个新的仓库</h4><p>更新apt包</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure><p>安装需要用到的包</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install \</span><br><span class="line">    apt-transport-https \</span><br><span class="line">    ca-certificates \</span><br><span class="line">    curl \</span><br><span class="line">    gnupg-agent \</span><br><span class="line">    software-properties-common</span><br></pre></td></tr></table></figure><p>添加GPG key</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -fsSL https:&#x2F;&#x2F;download.docker.com&#x2F;linux&#x2F;ubuntu&#x2F;gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure><h4 id="2、下载Docker引擎"><a href="#2、下载Docker引擎" class="headerlink" title="2、下载Docker引擎"></a>2、下载Docker引擎</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure><p>跑一下helloworld镜像，验证是否安装成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker run hello-world</span><br></pre></td></tr></table></figure><h3 id="二、部署ElasticSearch"><a href="#二、部署ElasticSearch" class="headerlink" title="二、部署ElasticSearch"></a>二、部署ElasticSearch</h3><h4 id="1、拉取镜像"><a href="#1、拉取镜像" class="headerlink" title="1、拉取镜像"></a>1、拉取镜像</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker pull docker.elastic.co&#x2F;elasticsearch&#x2F;elasticsearch:7.6.1</span><br></pre></td></tr></table></figure><p>由于国内源速度很慢，这里需要用阿里云加速下</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go Module的使用</title>
       <link href="/2020/02/26/Go-Module%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
       <url>/2020/02/26/Go-Module%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
